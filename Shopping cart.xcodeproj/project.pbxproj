@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0C58B626A0DC0A00F77351 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CE0C58B526A0DC0A00F77351 /* Kingfisher */; };
 		CEA5D4E726A0CF2700FA669B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D4E626A0CF2700FA669B /* AppDelegate.swift */; };
 		CEA5D4E926A0CF2700FA669B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D4E826A0CF2700FA669B /* SceneDelegate.swift */; };
 		CEA5D4F026A0CF2A00FA669B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA5D4EF26A0CF2A00FA669B /* Assets.xcassets */; };
@@ -15,6 +16,9 @@
 		CEA5D50326A0CFFA00FA669B /* CartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA5D50126A0CFFA00FA669B /* CartViewController.xib */; };
 		CEA5D50726A0D09B00FA669B /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D50526A0D09A00FA669B /* ProductListViewController.swift */; };
 		CEA5D50826A0D09B00FA669B /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA5D50626A0D09A00FA669B /* ProductListViewController.xib */; };
+		CEA5D50D26A0D34900FA669B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D50C26A0D34900FA669B /* Product.swift */; };
+		CEA5D51326A0D53100FA669B /* ProductItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D51126A0D53100FA669B /* ProductItemTableViewCell.swift */; };
+		CEA5D51426A0D53100FA669B /* ProductItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA5D51226A0D53100FA669B /* ProductItemTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,9 @@
 		CEA5D50126A0CFFA00FA669B /* CartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartViewController.xib; sourceTree = "<group>"; };
 		CEA5D50526A0D09A00FA669B /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		CEA5D50626A0D09A00FA669B /* ProductListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
+		CEA5D50C26A0D34900FA669B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		CEA5D51126A0D53100FA669B /* ProductItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemTableViewCell.swift; sourceTree = "<group>"; };
+		CEA5D51226A0D53100FA669B /* ProductItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductItemTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0C58B626A0DC0A00F77351 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +68,7 @@
 		CEA5D4E526A0CF2700FA669B /* Shopping cart */ = {
 			isa = PBXGroup;
 			children = (
+				CEA5D50B26A0D32B00FA669B /* Model */,
 				CEA5D4FD26A0CFA500FA669B /* Application */,
 				CEA5D4E626A0CF2700FA669B /* AppDelegate.swift */,
 				CEA5D4E826A0CF2700FA669B /* SceneDelegate.swift */,
@@ -82,6 +91,7 @@
 		CEA5D4FE26A0CFBE00FA669B /* Product List */ = {
 			isa = PBXGroup;
 			children = (
+				CEA5D51026A0D4E800FA669B /* Cell */,
 				CEA5D50526A0D09A00FA669B /* ProductListViewController.swift */,
 				CEA5D50626A0D09A00FA669B /* ProductListViewController.xib */,
 			);
@@ -95,6 +105,23 @@
 				CEA5D50126A0CFFA00FA669B /* CartViewController.xib */,
 			);
 			path = Cart;
+			sourceTree = "<group>";
+		};
+		CEA5D50B26A0D32B00FA669B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEA5D50C26A0D34900FA669B /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEA5D51026A0D4E800FA669B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CEA5D51126A0D53100FA669B /* ProductItemTableViewCell.swift */,
+				CEA5D51226A0D53100FA669B /* ProductItemTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +140,9 @@
 			dependencies = (
 			);
 			name = "Shopping cart";
+			packageProductDependencies = (
+				CE0C58B526A0DC0A00F77351 /* Kingfisher */,
+			);
 			productName = "Shopping cart";
 			productReference = CEA5D4E326A0CF2700FA669B /* Shopping cart.app */;
 			productType = "com.apple.product-type.application";
@@ -140,6 +170,9 @@
 				Base,
 			);
 			mainGroup = CEA5D4DA26A0CF2700FA669B;
+			packageReferences = (
+				CE0C58B426A0DC0A00F77351 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = CEA5D4E426A0CF2700FA669B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -156,6 +189,7 @@
 			files = (
 				CEA5D4F326A0CF2A00FA669B /* LaunchScreen.storyboard in Resources */,
 				CEA5D50326A0CFFA00FA669B /* CartViewController.xib in Resources */,
+				CEA5D51426A0D53100FA669B /* ProductItemTableViewCell.xib in Resources */,
 				CEA5D50826A0D09B00FA669B /* ProductListViewController.xib in Resources */,
 				CEA5D4F026A0CF2A00FA669B /* Assets.xcassets in Resources */,
 			);
@@ -170,6 +204,8 @@
 			files = (
 				CEA5D4E726A0CF2700FA669B /* AppDelegate.swift in Sources */,
 				CEA5D50226A0CFFA00FA669B /* CartViewController.swift in Sources */,
+				CEA5D51326A0D53100FA669B /* ProductItemTableViewCell.swift in Sources */,
+				CEA5D50D26A0D34900FA669B /* Product.swift in Sources */,
 				CEA5D50726A0D09B00FA669B /* ProductListViewController.swift in Sources */,
 				CEA5D4E926A0CF2700FA669B /* SceneDelegate.swift in Sources */,
 			);
@@ -363,6 +399,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE0C58B426A0DC0A00F77351 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE0C58B526A0DC0A00F77351 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE0C58B426A0DC0A00F77351 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEA5D4DB26A0CF2700FA669B /* Project object */;
 }
