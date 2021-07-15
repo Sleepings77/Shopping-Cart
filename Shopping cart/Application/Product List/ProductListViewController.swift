@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ProductListViewController.swift
 //  Shopping cart
 //
 //  Created by InfinixSoft on 15/07/2021.
@@ -7,13 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ProductListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
 
-
 }
-

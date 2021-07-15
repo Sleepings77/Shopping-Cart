@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		CEA5D4E726A0CF2700FA669B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D4E626A0CF2700FA669B /* AppDelegate.swift */; };
 		CEA5D4E926A0CF2700FA669B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D4E826A0CF2700FA669B /* SceneDelegate.swift */; };
-		CEA5D4EB26A0CF2700FA669B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D4EA26A0CF2700FA669B /* ViewController.swift */; };
-		CEA5D4EE26A0CF2700FA669B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA5D4EC26A0CF2700FA669B /* Main.storyboard */; };
 		CEA5D4F026A0CF2A00FA669B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA5D4EF26A0CF2A00FA669B /* Assets.xcassets */; };
 		CEA5D4F326A0CF2A00FA669B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA5D4F126A0CF2A00FA669B /* LaunchScreen.storyboard */; };
+		CEA5D50226A0CFFA00FA669B /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D50026A0CFFA00FA669B /* CartViewController.swift */; };
+		CEA5D50326A0CFFA00FA669B /* CartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA5D50126A0CFFA00FA669B /* CartViewController.xib */; };
+		CEA5D50726A0D09B00FA669B /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D50526A0D09A00FA669B /* ProductListViewController.swift */; };
+		CEA5D50826A0D09B00FA669B /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA5D50626A0D09A00FA669B /* ProductListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEA5D4E326A0CF2700FA669B /* Shopping cart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopping cart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA5D4E626A0CF2700FA669B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA5D4E826A0CF2700FA669B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEA5D4EA26A0CF2700FA669B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CEA5D4ED26A0CF2700FA669B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEA5D4EF26A0CF2A00FA669B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA5D4F226A0CF2A00FA669B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEA5D4F426A0CF2A00FA669B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA5D50026A0CFFA00FA669B /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		CEA5D50126A0CFFA00FA669B /* CartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartViewController.xib; sourceTree = "<group>"; };
+		CEA5D50526A0D09A00FA669B /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		CEA5D50626A0D09A00FA669B /* ProductListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		CEA5D4E526A0CF2700FA669B /* Shopping cart */ = {
 			isa = PBXGroup;
 			children = (
+				CEA5D4FD26A0CFA500FA669B /* Application */,
 				CEA5D4E626A0CF2700FA669B /* AppDelegate.swift */,
 				CEA5D4E826A0CF2700FA669B /* SceneDelegate.swift */,
-				CEA5D4EA26A0CF2700FA669B /* ViewController.swift */,
-				CEA5D4EC26A0CF2700FA669B /* Main.storyboard */,
 				CEA5D4EF26A0CF2A00FA669B /* Assets.xcassets */,
 				CEA5D4F126A0CF2A00FA669B /* LaunchScreen.storyboard */,
 				CEA5D4F426A0CF2A00FA669B /* Info.plist */,
 			);
 			path = "Shopping cart";
+			sourceTree = "<group>";
+		};
+		CEA5D4FD26A0CFA500FA669B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CEA5D4FF26A0CFD300FA669B /* Cart */,
+				CEA5D4FE26A0CFBE00FA669B /* Product List */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CEA5D4FE26A0CFBE00FA669B /* Product List */ = {
+			isa = PBXGroup;
+			children = (
+				CEA5D50526A0D09A00FA669B /* ProductListViewController.swift */,
+				CEA5D50626A0D09A00FA669B /* ProductListViewController.xib */,
+			);
+			path = "Product List";
+			sourceTree = "<group>";
+		};
+		CEA5D4FF26A0CFD300FA669B /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				CEA5D50026A0CFFA00FA669B /* CartViewController.swift */,
+				CEA5D50126A0CFFA00FA669B /* CartViewController.xib */,
+			);
+			path = Cart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +155,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEA5D4F326A0CF2A00FA669B /* LaunchScreen.storyboard in Resources */,
+				CEA5D50326A0CFFA00FA669B /* CartViewController.xib in Resources */,
+				CEA5D50826A0D09B00FA669B /* ProductListViewController.xib in Resources */,
 				CEA5D4F026A0CF2A00FA669B /* Assets.xcassets in Resources */,
-				CEA5D4EE26A0CF2700FA669B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA5D4EB26A0CF2700FA669B /* ViewController.swift in Sources */,
 				CEA5D4E726A0CF2700FA669B /* AppDelegate.swift in Sources */,
+				CEA5D50226A0CFFA00FA669B /* CartViewController.swift in Sources */,
+				CEA5D50726A0D09B00FA669B /* ProductListViewController.swift in Sources */,
 				CEA5D4E926A0CF2700FA669B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +178,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CEA5D4EC26A0CF2700FA669B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEA5D4ED26A0CF2700FA669B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CEA5D4F126A0CF2A00FA669B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
