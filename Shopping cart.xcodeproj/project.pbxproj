@@ -20,6 +20,7 @@
 		CEA5D50D26A0D34900FA669B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D50C26A0D34900FA669B /* Product.swift */; };
 		CEA5D51326A0D53100FA669B /* ProductItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D51126A0D53100FA669B /* ProductItemTableViewCell.swift */; };
 		CEA5D51426A0D53100FA669B /* ProductItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA5D51226A0D53100FA669B /* ProductItemTableViewCell.xib */; };
+		CEEFEA0426A620530071BDC5 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFEA0326A620530071BDC5 /* CartItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		CEA5D50C26A0D34900FA669B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		CEA5D51126A0D53100FA669B /* ProductItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemTableViewCell.swift; sourceTree = "<group>"; };
 		CEA5D51226A0D53100FA669B /* ProductItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductItemTableViewCell.xib; sourceTree = "<group>"; };
+		CEEFEA0326A620530071BDC5 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				CEA5D50C26A0D34900FA669B /* Product.swift */,
 				CE0C58B826A0E02B00F77351 /* Cart.swift */,
+				CEEFEA0326A620530071BDC5 /* CartItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			files = (
 				CEA5D4E726A0CF2700FA669B /* AppDelegate.swift in Sources */,
 				CEA5D50226A0CFFA00FA669B /* CartViewController.swift in Sources */,
+				CEEFEA0426A620530071BDC5 /* CartItem.swift in Sources */,
 				CEA5D51326A0D53100FA669B /* ProductItemTableViewCell.swift in Sources */,
 				CE0C58B926A0E02B00F77351 /* Cart.swift in Sources */,
 				CEA5D50D26A0D34900FA669B /* Product.swift in Sources */,

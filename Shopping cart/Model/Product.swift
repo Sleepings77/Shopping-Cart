@@ -12,6 +12,7 @@ struct Product {
     let name        : String
     let price       : Double
     let image       : String
+    let id          : Int
     var count       = 0
     
     var formattedPrice : String {

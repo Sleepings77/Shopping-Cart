@@ -8,9 +8,21 @@
 import Foundation
 import UIKit
 
-final class  Settings {
-    static let shared = Settings()
-    var username: String?
-
+final class  Cart {
+    static let shared = Cart()
+    var items: [CartItem] = []
+    
     private init() { }
+    
+    func addProduct(_ product: Product){
+        let index = items.firstIndex { (item) -> Bool in
+            item.product.id  == product.id
+        }
+    }
+    
+    
+    func removeProduct(_ product: Product){
+        
+    }
+    
 }
