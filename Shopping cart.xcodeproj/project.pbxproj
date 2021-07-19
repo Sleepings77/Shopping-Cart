@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE0C58B626A0DC0A00F77351 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CE0C58B526A0DC0A00F77351 /* Kingfisher */; };
+		CE0C58B926A0E02B00F77351 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C58B826A0E02B00F77351 /* Cart.swift */; };
 		CEA5D4E726A0CF2700FA669B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D4E626A0CF2700FA669B /* AppDelegate.swift */; };
 		CEA5D4E926A0CF2700FA669B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D4E826A0CF2700FA669B /* SceneDelegate.swift */; };
 		CEA5D4F026A0CF2A00FA669B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA5D4EF26A0CF2A00FA669B /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE0C58B826A0E02B00F77351 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		CEA5D4E326A0CF2700FA669B /* Shopping cart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopping cart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA5D4E626A0CF2700FA669B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA5D4E826A0CF2700FA669B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA5D50C26A0D34900FA669B /* Product.swift */,
+				CE0C58B826A0E02B00F77351 /* Cart.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				CEA5D4E726A0CF2700FA669B /* AppDelegate.swift in Sources */,
 				CEA5D50226A0CFFA00FA669B /* CartViewController.swift in Sources */,
 				CEA5D51326A0D53100FA669B /* ProductItemTableViewCell.swift in Sources */,
+				CE0C58B926A0E02B00F77351 /* Cart.swift in Sources */,
 				CEA5D50D26A0D34900FA669B /* Product.swift in Sources */,
 				CEA5D50726A0D09B00FA669B /* ProductListViewController.swift in Sources */,
 				CEA5D4E926A0CF2700FA669B /* SceneDelegate.swift in Sources */,

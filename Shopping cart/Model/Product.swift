@@ -12,6 +12,7 @@ struct Product {
     let name        : String
     let price       : Double
     let image       : String
+    var count       = 0
     
     var formattedPrice : String {
         let currencyFormatter = NumberFormatter()

@@ -29,7 +29,6 @@ class ProductListViewController: UIViewController {
 
 extension ProductListViewController : UITableViewDelegate, UITableViewDataSource {
     
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return products.count
     }
